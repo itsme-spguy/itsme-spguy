@@ -34,6 +34,31 @@
   ::selection{
             background-color: crimson;
         }
+
+        .mob {
+          height: 100vh;
+          width: 100%;
+          background: rgba(20,20,20,0.5);
+          backdrop-filter: blur(20px);
+          position: fixed;
+        z-index: 100;   
+        color: aliceblue; 
+        top: -110%;
+        left: -110%;   
+        text-align: center;
+        
+        transition: 1s; 
+      }
+
+        @media (max-width: 900px) {
+.mob {
+  top:0;
+  left: 0;
+  transition: 1s;
+}
+          
+        }
+
 body {
   margin: 0;
   font-family: Quicksand;
@@ -127,6 +152,10 @@ td {padding: 10px;}
 </style>
 </head>
 <body>
+
+<div class="mob">
+<h1 style="font-family:Fredericka The Great;">Not suitable for mobile and tablet devices. The website is under construction.</h1>
+</div>
 
   <div class="nav">
 <span>
