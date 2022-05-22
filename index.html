@@ -5,6 +5,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Quicksand:wght@100;200;300;400;500;600;700;800;900&family=Patrick+Hand&family=Fredericka+the+Great&family=Smooch:wght@100;200;300;400;500;600;700;800;900&family=Poppins&display=swap"  rel="stylesheet">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 <style>
   ::-webkit-scrollbar {
@@ -34,31 +35,6 @@
   ::selection{
             background-color: crimson;
         }
-
-        .mob {
-          height: 100vh;
-          width: 100%;
-          background: rgba(20,20,20,0.5);
-          backdrop-filter: blur(20px);
-          position: fixed;
-        z-index: 100;   
-        color: aliceblue; 
-        top: -110%;
-        left: -110%;   
-        text-align: center;
-        
-        transition: 1s; 
-      }
-
-        @media (max-width: 900px) {
-.mob {
-  top:0;
-  left: 0;
-  transition: 1s;
-}
-          
-        }
-
 body {
   margin: 0;
   font-family: Quicksand;
@@ -152,10 +128,6 @@ td {padding: 10px;}
 </style>
 </head>
 <body>
-
-<div class="mob">
-<h1 style="font-family:Fredericka The Great;">Not suitable for mobile and tablet devices. The website is under construction.</h1>
-</div>
 
   <div class="nav">
 <span>
@@ -318,6 +290,19 @@ td {padding: 10px;}
   <p>Reload To turn off dark mode</p>
 </div>
 
+<script type="text/javascript">
+  $(window).on('load resize',function(){
+      if($(window).width() < 900){
+          window.location = "https://subhransuindia.github.io/Subhransu%20Patra.html"
+      }
+  });
+
+  $(window).on('load resize',function(){
+      if($(window).width() < 1400){
+          window.location = "https://itsme-spguy.github.io"
+      }
+  });
+</script>
 
 <script>
   function dark() {
